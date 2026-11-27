@@ -1,5 +1,7 @@
 # PAYNEST-ISMS
 
+> **Note:** PayNest is a fictional company created for a portfolio project. All test results and evidence records are simulated examples.
+
 Information Security Management System (ISMS) documentation and governance artifacts for **PayNest** (credit, savings, deposit-taking, and wallet services), aligned with **ISO/IEC 27001**.
 
 ## Scope & Operational Boundaries
