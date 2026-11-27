@@ -1,28 +1,23 @@
-# PayNest — Information Security Management System (ISMS)
+# PAYNEST-ISMS
 
-> **Portfolio Note:** PayNest is a fictional financial services company created for a Governance, Risk, and Compliance (GRC) portfolio project.
+Information Security Management System (ISMS) documentation and governance artifacts for **PayNest** (credit, savings, deposit-taking, and wallet services), aligned with **ISO/IEC 27001**.
 
-## Project Overview
-This repository documents a practical ISMS design for **PayNest** (v1.0, owned by the Information Security Officer), covering information used to deliver credit, savings, deposit-taking, and wallet services across its Tamale office, mobile app, website, USSD channel, and field agents. It is structured around **ISO/IEC 27001** principles alongside relevant fintech data protection and operational resilience considerations.
-
-## ISMS Scope Statement
-The ISMS of PayNest applies to the protection of information used to provide credit, savings, deposit-taking, and wallet services through its Tamale office, mobile app, website, USSD, and field agents.
-
-### Included
-* **People:** All 25 staff (office and remote, in Ghana) and field agents
-* **Information:** Customer personal data, accounts, wallets, transaction records, credit records, and staff records
-* **Systems:** In-house software, core systems, databases, Microsoft 365 *(non-sensitive use only)*, office and mobile devices
-* **Connectivity and Power:** MTN internet, Starlink backup, UPS, and backup generator
-* **Hosting and Backup:** Primary servers at **Onix Data Centre, Accra**; encrypted backup server at the **Tamale office**
-* **Suppliers and Dependencies:** Onix, Microsoft, MTN, Starlink, USSD provider, and independent security tester
-
-### Exclusions
-* **Customers' own phones and computers:** Devices PayNest does not control are excluded *(the security of PayNest's app, website, USSD service, and customer data remains in scope)*.
-* **Suppliers' own equipment and buildings:** Underlying supplier infrastructure and facilities are excluded *(PayNest's management of supplier risks remains in scope)*.
+## Scope & Operational Boundaries
+* **Channels & People:** Covers PayNest's Tamale office, mobile app, website, USSD channel, and field agents, including all 25 staff (office and remote in Ghana) and field agents.
+* **Infrastructure & Data Boundaries:** Primary servers reside at **Onix Data Centre (Accra)**, an encrypted backup server operates at the **Tamale office**, connectivity and power rely on **MTN internet**, **Starlink backup**, **UPS**, and a **backup generator**, and **Microsoft 365** is restricted to *non-sensitive use only*.
+* **Exclusions:** Customers' personal phones/computers and suppliers' internal facilities/equipment are excluded from direct PayNest technical control, while PayNest's applications, data, and supplier risk governance remain in scope.
 
 ## Repository Structure
-* `01-context-and-scope/` — Scope statement (`scope.md`), asset and data classification register, and context/compliance notes
-* `02-risk-management/` — Risk methodology, risk register, and treatment plans
-* `03-policies-and-soa/` — Core ISMS policies, operational procedures, and Statement of Applicability (SoA)
-* `04-third-party-risk/` — Supplier tiering and dependency controls (Onix, Microsoft, MTN, Starlink, USSD provider, security tester)
-* `05-assurance-and-evidence/` — Sample audit checklists, access reviews, incident runbooks, and failover/backup test logs
+
+| Folder | Phase / Focus | Key Artifacts |
+| :--- | :--- | :--- |
+| `01-context-and-scope/` | Context, Scope & Asset Inventory | Scope statement (`scope.md`) and asset/data classification register |
+| `02-risk-management/` | Risk Methodology & Risk Register | Risk assessment methodology (`risk-methodology.md`) and risk register (`risk-register.csv`) |
+| `03-policies-and-soa/` | Policies & Statement of Applicability | Information security policy and Statement of Applicability (`statement-of-applicability.csv`) |
+| `04-third-party-risk/` | Third-Party Risk Management | TPRM policy (`tprm-policy.md`) and supplier risk & tiering register |
+| `05-assurance-and-evidence/` | Incident Response, Continuity & Evidence | Incident response & continuity runbook (`incident-continuity-runbook.md`) and assurance/evidence log (`Assurance and Evidence Log.csv`) |
+
+## Governance & Review Cadence
+* **Risk Register & SoA:** Reviewed quarterly and upon major architectural, channel, supplier, or regulatory changes.
+* **Policies & TPRM:** Reviewed annually (with semi-annual/engagement-level oversight for critical suppliers and independent security testers).
+* **Assurance & Continuity:** Periodic backup restore drills, MTN-to-Starlink and power failover tests, access/DLP reviews, and incident post-reviews tracked in `05-assurance-and-evidence/`.
