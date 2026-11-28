@@ -35,22 +35,22 @@ Both Likelihood and Impact are scored on a **1 to 5 scale** to establish consist
 | **5** | Severe / Catastrophic | Severe financial loss or solvency/liquidity shock; widespread compromise of Restricted customer PII, wallet/deposit/credit records, or core systems; severe regulatory enforcement/license risk or lasting loss of customer trust. |
 
 ## 4. Risk Calculation, Risk Matrix, and Risk Appetite
-**Inherent Risk Score** is calculated as `Likelihood × Impact` (ranging from **1** to **25**). **Residual Risk Score** applies the same `Likelihood × Impact` formula after planned or implemented controls are accounted for.
+**Inherent Risk Score** is `Likelihood × Impact` before controls (range **1** to **25**). **Current Risk Score** reflects only controls operating today: risks whose treatment is *Planned* keep their inherent score, and partially treated (*In Progress*) risks may be credited only for what is already in place. **Target Risk Score** is the level expected once all planned controls are implemented and verified. Risk acceptance and sign-off decisions use the current score.
 
 | Risk Score Range | Risk Level | Governance Action & Approval Requirement |
 | :--- | :--- | :--- |
 | **1 – 4** | Low | Acceptable within routine operations; monitor periodically via standard controls. |
 | **5 – 9** | Medium | Manage through defined controls and regular monitoring; review quarterly by asset/risk owner. |
 | **10 – 14** | High | Requires prioritized treatment plan and targeted controls; requires Information Security Officer and operational lead sign-off. |
-| **15 – 25** | Critical | Immediate executive escalation and mandatory treatment action; requires formal management acceptance if any residual score remains elevated. |
+| **15 – 25** | Critical | Immediate executive escalation and mandatory treatment action; requires formal management acceptance if any current score remains elevated. |
 
-**PayNest Risk Appetite:** PayNest maintains a **low risk appetite** for unauthorized access, alteration, or loss of *Restricted* data (customer PII, credit/KYC records, accounts, wallets, deposits, savings, transactions, and HR records) and for prolonged unavailability of core/USSD/wallet services. Residual risks scoring **10 or above** require documented justification and executive/Information Security Officer approval.
+**PayNest Risk Appetite:** PayNest maintains a **low risk appetite** for unauthorized access, alteration, or loss of *Restricted* data (customer PII, credit/KYC records, accounts, wallets, deposits, savings, transactions, and HR records) and for prolonged unavailability of core/USSD/wallet services. Current risks scoring **10 or above** require documented justification and executive/Information Security Officer approval.
 
 ## 5. Risk Treatment Options
 1. **Mitigate:** Implement technical, physical, or procedural controls to reduce Likelihood, Impact, or both.
 2. **Transfer:** Shift or share financial/operational risk through contracts, SLAs, insurance, or vetted third-party arrangements (recognizing that accountability and TPRM oversight remain with PayNest).
 3. **Avoid:** Eliminate the risk by discontinuing, restricting, or not initiating the activity or data handling practice (for example, enforcing *Microsoft 365 non-sensitive use only*).
-4. **Accept:** Consciously retain a low or justified residual risk where further treatment is disproportionate, subject to formal approval and periodic review.
+4. **Accept:** Consciously retain a low or justified current risk where further treatment is disproportionate, subject to formal approval and periodic review.
 
 ## 6. Review Cadence and Governance
 The Risk Register (`02-risk-management/risk-register.csv`) is reviewed **quarterly** and whenever major architectural, supplier, channel, or regulatory changes occur (such as changes to Onix hosting, USSD integration, field agent workflows, or connectivity/power setups in Tamale).
