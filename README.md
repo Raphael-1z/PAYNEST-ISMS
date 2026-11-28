@@ -13,7 +13,7 @@ Information Security Management System (ISMS) documentation and governance artif
 
 | Folder | Phase / Focus | Key Artifacts |
 | :--- | :--- | :--- |
-| `01-context-and-scope/` | Context, Scope & Asset Inventory | Scope statement (`scope.md`) and asset/data classification register |
+| `01-context-and-scope/` | Context, Scope & Asset Inventory | Scope statement (`scope.md`), asset/data classification register and legal register (`legal-register.csv`) |
 | `02-risk-management/` | Risk Methodology & Risk Register | Risk assessment methodology (`risk-methodology.md`) and risk register (`risk-register.csv`) |
 | `03-policies-and-soa/` | Policies & Statement of Applicability | Information security policy and Statement of Applicability (`statement-of-applicability.csv`) |
 | `04-third-party-risk/` | Third-Party Risk Management | TPRM policy (`tprm-policy.md`) and supplier risk & tiering register |

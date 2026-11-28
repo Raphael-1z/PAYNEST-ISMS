@@ -1,0 +1,8 @@
+Ref,Requirement,Why it applies to PayNest,Owner_Role,Linked_Items,Compliance_Status,Notes
+LEG-001,Banks and Specialised Deposit-Taking Institutions Act 2016 (Act 930),Licensing and supervision of deposit-taking business,Compliance & Credit Operations Lead,RSK-014; A.5.31,To be confirmed,Confirm licence category
+LEG-002,Bank of Ghana revised microfinance sector guidelines (2026),PayNest is modelled as a Microfinance Bank,Compliance & Credit Operations Lead,RSK-014,To be confirmed,Confirm capital and transition requirements
+LEG-003,Bank of Ghana Cyber and Information Security Directive (2026),Cyber governance incident handling cloud use and data location,GRC / Information Security Lead,RSK-014; A.5.23; A.5.24,To be confirmed,Data location points come from press reports; check the official text
+LEG-004,Data Protection Act 2012 (Act 843),Processing of customer and staff personal data including registration,GRC / Information Security Lead,RSK-006; RSK-014; A.5.34,To be confirmed,Monitor the proposed replacement bill
+LEG-005,Cybersecurity Act 2020 (Act 1038),National cybersecurity duties and incident reporting,GRC / Information Security Lead,RSK-014; A.5.5,To be confirmed,Monitor the proposed amendment bill
+LEG-006,Payment Systems and Services Act 2019 (Act 987),Wallet and payment services may need authorisation,Compliance & Credit Operations Lead,RSK-005; RSK-014,To be confirmed,Confirm whether separate approval is needed
+LEG-007,Bank of Ghana Outsourcing Directive (2024),Use of cloud and other service providers may need prior written approval,GRC / Information Security Lead,RSK-010; RSK-014; A.5.19; A.5.23,To be confirmed,Confirm which suppliers are covered
